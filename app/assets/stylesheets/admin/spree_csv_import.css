@@ -1,0 +1,20 @@
+/*
+ *= require admin/spree_core
+*/
+
+#csv_import_template {
+    float: left;
+    width: 48%;
+    overflow: hidden;
+}
+
+#csv_import_template .field {
+    display: inline-block;
+    float: left;
+    margin: 3px 5px;
+}
+
+#csv_import_upload {
+    float: right;
+    width: 48%;
+}

@@ -1,0 +1,9 @@
+en:
+  import_products: 'Import products'
+  csv_import:
+    generate_template: 'Generate template file'
+    generate_button: 'Generate'
+    import_products: 'Import products'
+    import_button: 'Import'
+    import_error: 'Each row in CSV file have to have name, price and scu fields'
+    import_success: '%{count} item(s) imported'

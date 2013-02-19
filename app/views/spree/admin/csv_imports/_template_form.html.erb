@@ -1,0 +1,12 @@
+<%= form_tag(admin_csv_import_template_path(format: "csv"), method: :post) do %>
+    <fieldset>
+      <legend align="center"><%= t('csv_import.generate_template') %></legend>
+      <%- Spree::CsvImport.available_fields.each do |field_name| %>
+          <div class="field">
+              <%= check_box_tag 'import_fields[]', field_name, true, :id => "import_fields_#{field_name}" %>
+              <%= label_tag :sku, t(field_name) %>
+          </div>
+      <% end %>
+      <%= submit_tag t('csv_import.generate_button') %>
+    </fieldset>
+<% end %>

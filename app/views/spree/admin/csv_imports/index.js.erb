@@ -1,0 +1,3 @@
+$("#new_product").html('<%= escape_javascript(render :template => "spree/admin/csv_imports/index", :formats => [:html], :handlers => [:erb]) %>');
+$("#table-filter").hide();
+$("#admin_new_product").parent().show();
